@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const ControlledForm = () => {
   const [error, setError] = useState("");
-  const [name, setName] = useState(null);
+  const [name, setName] = useState("Mamun Prodhan");
   const [email, setEmail] = useState(null);
   const [password, setPassword] = useState(null);
   const handleSubmit = (e) => {
@@ -46,6 +46,7 @@ const ControlledForm = () => {
           onChange={handleNameChange}
           type="text"
           name="name"
+          value={name}
           placeholder="Name"
         />{" "}
         <br />
