@@ -46,7 +46,6 @@ const ControlledForm = () => {
           onChange={handleNameChange}
           type="text"
           name="name"
-          value={name}
           placeholder="Name"
         />{" "}
         <br />
